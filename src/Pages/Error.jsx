@@ -7,8 +7,8 @@ export default function Error() {
   return (
     <Hero >
       <Banner title="404" subtitle="Page not found">
-        <Link className="btn-primary">
-          
+        <Link to="/" className="btn-primary">
+          return home
         </Link>
       </Banner>
     </Hero>
