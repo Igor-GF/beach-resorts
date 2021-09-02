@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../../images/logo.svg';
-import { FaAlignRight } from 'react-icons/fa';
+import { FaDiceSix } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 export default class Navbar extends Component {
@@ -16,6 +16,7 @@ export default class Navbar extends Component {
     return (
       <nav className="navbar">
         <div className="nav-center">
+          
           <div className="nav-header">
             <Link to="/">
               <img src={logo} alt="logo resort" />
@@ -25,7 +26,7 @@ export default class Navbar extends Component {
               className="nav-btn"
               onClick={this.toggleHandler}
             >
-              <FaAlignRight className="nav-icon" />
+              <FaDiceSix className="nav-icon" />
             </button>
           </div>
 
@@ -37,6 +38,7 @@ export default class Navbar extends Component {
               <Link to="/rooms">Rooms</Link>
             </li>
           </ul>
+
         </div>
       </nav>
     )
